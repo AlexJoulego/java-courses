@@ -7,6 +7,18 @@ public class Calculator {
 		}
 	}
 
+	public void sub(int ... params) {
+		for (Integer param : params) {
+			this.result -= param;
+		}
+	}
+
+	public void mul(int ... params) {
+		for (Integer param : params) {
+			this.result *= param;
+		}
+	}
+
 	public int getResult() {
 		return this.result;
 	}
